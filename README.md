@@ -22,10 +22,11 @@ Each clock hand is treated as a vector from the center of the clock:
 - **Phase angle (θ):** Measured counterclockwise from the real axis (3 o'clock), converted to the principal value in (-180°, 180°]
 - **Real part:** r·cos(θ)
 - **Imaginary part:** r·sin(θ)
+- **Frequency (f):** The rate of rotation of each hand — the rotational component of a complex number's rate of change. The second hand completes one full revolution every 60 seconds (f = 1/60 Hz), the minute hand every 60 minutes (f = 1/3600 Hz), and the hour hand every 12 hours (f = 1/43200 Hz). The clock makes this relationship intuitive: a rotating vector in the complex plane is a sinusoid, and its frequency is simply how fast it turns.
 
 ## Setup
 
-Requires Python 3.10. Dependencies are managed with Pipenv.
+Requires Python 3.12. Dependencies are managed with Pipenv.
 
 ```bash
 pipenv install
@@ -48,9 +49,15 @@ Key parameters in the notebook's "Set parameters" cell:
 | `screen_ratio_w_h` | Window size as a fraction of display resolution |
 | `clock_w_ratio` | Fraction of window width allocated to the clock |
 | `fps` | Frames per second |
+| `save_screenshots` | Enable periodic screenshot capture |
+| `save_interval` | Seconds between screenshots |
+| `save_dir` | Directory for saved screenshots |
+| `save_resolution` | Screenshot output resolution |
 
 ## Dependencies
 
-- [pygame-ce](https://pyga.me/) — Clock display window
+- [pygame](https://www.pygame.org/) — Clock display window
 - [Matplotlib](https://matplotlib.org/) + [pygame-matplotlib](https://pypi.org/project/pygame-matplotlib/) — Embedded time-series plots
+- [pandas](https://pandas.pydata.org/) — Data handling
+- [PyQt6](https://www.riverbankcomputing.com/software/pyqt/) — Qt bindings (display detection)
 - [JupyterLab](https://jupyter.org/) — Notebook runtime
