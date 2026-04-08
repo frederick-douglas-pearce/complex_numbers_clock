@@ -9,7 +9,7 @@ An interactive analog clock that visualizes time as complex numbers using Pygame
 ## Tech Stack
 
 - **Python 3.12** with **Pipenv** for dependency management
-- **Pygame** (pygame-ce) for the clock display window
+- **Pygame** for the clock display window
 - **Matplotlib** with `pygame_matplotlib` backend for embedding plots in the Pygame surface
 - **JupyterLab** (`complex_numbers_clock.ipynb`) — all code lives in a single notebook
 - **pandas** for data handling

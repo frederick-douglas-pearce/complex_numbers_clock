@@ -56,7 +56,7 @@ Key parameters in the notebook's "Set parameters" cell:
 
 ## Dependencies
 
-- [pygame-ce](https://pyga.me/) — Clock display window
+- [pygame](https://www.pygame.org/) — Clock display window
 - [Matplotlib](https://matplotlib.org/) + [pygame-matplotlib](https://pypi.org/project/pygame-matplotlib/) — Embedded time-series plots
 - [pandas](https://pandas.pydata.org/) — Data handling
 - [PyQt6](https://www.riverbankcomputing.com/software/pyqt/) — Qt bindings (display detection)
