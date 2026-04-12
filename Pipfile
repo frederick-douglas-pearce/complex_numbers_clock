@@ -9,6 +9,8 @@ pandas = "*"
 pygame = "*"
 pyqt6 = "*"
 pygame-matplotlib = "*"
+imageio = "*"
+imageio-ffmpeg = "*"
 
 [dev-packages]
 
